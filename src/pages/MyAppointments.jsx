@@ -56,8 +56,6 @@ function MyAppointmet() {
       order_id: order.id,
       receipt: order.receipt,
       handler: async (response) => {
-        console.log(response)
-
         try {
           const { data } = await axios.post(backendUrl + '/api/user/verify-razorpay', response, { headers: { token } })
 
