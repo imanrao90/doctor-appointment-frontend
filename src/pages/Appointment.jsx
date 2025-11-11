@@ -74,7 +74,7 @@ function Appointment() {
 
   async function bookAppointment() {
     if (!token) {
-      toast.warn('Login to boo appointment')
+      toast.warn('Login to book appointment')
       navigate('/login')
     }
 
